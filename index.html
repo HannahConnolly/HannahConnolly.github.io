@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hannah Connolly · Backend Software Engineer</title>
+  <meta name="description" content="Backend software engineer in New York. APIs, data synchronization, and event-driven systems in Python, TypeScript, and AWS. Previously at BentoBox and American Express.">
+  <meta property="og:title" content="Hannah Connolly · Backend Software Engineer">
+  <meta property="og:description" content="APIs, data synchronization, and event-driven systems in Python, TypeScript, and AWS. Previously at BentoBox and American Express.">
+  <meta property="og:type" content="website">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f4a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23faf8f4'%3EHC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply a saved theme before first paint to avoid a flash.
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.dataset.theme = saved;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top">Hannah Connolly</a>
+      <nav aria-label="Sections">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#community">Community</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.2A8 8 0 0 1 9.8 4a8 8 0 1 0 10.2 10.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <p class="eyebrow">Backend Software Engineer · New York, NY</p>
+      <h1>I build APIs that keep data consistent at scale.</h1>
+      <p class="lede">
+        I'm a backend engineer working mostly in Python and TypeScript. At BentoBox I built payment
+        and point-of-sale integrations for more than 5,000 restaurants, and at American Express I
+        moved customer acquisition APIs from REST to GraphQL. Lately I've been building
+        event-driven systems on AWS and contributing to
+        <a href="https://github.com/jmlee337/replay-manager-for-slippi" rel="noopener">Replay Manager for Slippi</a>,
+        an open-source tournament tool.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:hannahconnolly949@gmail.com">Email me</a>
+        <a class="btn" href="https://github.com/HannahConnolly" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/hannahconn" rel="noopener">LinkedIn</a>
+      </div>
+
+      <dl class="stats">
+        <div>
+          <dt>Data updates synced monthly</dt>
+          <dd>10M+</dd>
+        </div>
+        <div>
+          <dt>Restaurants served</dt>
+          <dd>5,000+</dd>
+        </div>
+        <div>
+          <dt>Customer accounts on a unified schema</dt>
+          <dd>20M+</dd>
+        </div>
+        <div>
+          <dt>Lower API latency</dt>
+          <dd>40%</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="wrap section" id="experience">
+      <h2>Experience</h2>
+
+      <article class="role">
+        <div class="when">Jun 2022 – Feb 2023</div>
+        <div class="what">
+          <h3>Software Engineer, Backend <span class="org">BentoBox</span></h3>
+          <ul>
+            <li>Built a Django API for Fiserv gift card purchases and redemptions, supporting over 50,000 transactions per month across all BentoBox locations.</li>
+            <li>Engineered a synchronization engine that processed over 10 million data updates monthly across five POS systems, ensuring sub-second data consistency for 5,000+ restaurants.</li>
+            <li>Implemented a catering integration with Clover POS, enabling seamless ordering and supporting over 10,000 monthly transactions.</li>
+            <li>Designed microservices tailored to each POS system, ensuring a consistent user experience for over 5,000 restaurants.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role">
+        <div class="when">May 2021 – May 2022</div>
+        <div class="what">
+          <h3>Software Engineer, Backend <span class="org">American Express</span></h3>
+          <ul>
+            <li>Optimized customer acquisition APIs by implementing GraphQL persisted queries and server-side caching in JavaScript, reducing data retrieval latency by 40% for millions of monthly interactions.</li>
+            <li>Designed a unified data schema for over 20 million customer accounts and led the migration of backend APIs onto it, replacing the legacy REST endpoints.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="role">
+        <div class="when">Jun 2020 – Aug 2020</div>
+        <div class="what">
+          <h3>Software Engineer Intern, Backend <span class="org">American Express</span></h3>
+          <ul>
+            <li>Built a backend tool that automatically generates API schemas from existing REST endpoints.</li>
+            <li>Modernized APIs by architecting and deploying components that integrate with a modern query language system.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap section" id="projects">
+      <h2>Projects</h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-head">
+            <p class="card-meta">2026 · Personal project</p>
+            <h3><a href="https://github.com/HannahConnolly/plant-timelapse" rel="noopener">Plant AI: IoT plant monitor on AWS</a></h3>
+            <p class="tags"><span>Python</span><span>Raspberry Pi</span><span>IoT Core</span><span>Lambda</span><span>DynamoDB</span><span>S3</span></p>
+          </div>
+          <ul>
+            <li>Built a Raspberry Pi plant monitor in Python logging hourly climate data and daily photos.</li>
+            <li>Streamed sensor data to AWS IoT Core over MQTT using X.509 certificate authentication, and routed it through an IoT Rule into DynamoDB, with keys designed for time-range queries.</li>
+            <li>Moved Gemini image analysis to an event-driven AWS Lambda triggered by S3 photo uploads. It queries 24 hours of readings from DynamoDB, loads secrets from SSM Parameter Store, and retries when the API is rate-limited.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <p class="card-meta">2026 · Open-source contribution</p>
+            <h3><a href="https://github.com/jmlee337/replay-manager-for-slippi" rel="noopener">Replay Manager for Slippi</a></h3>
+            <p class="tags"><span>GraphQL</span><span>start.gg API</span><span>Open source</span></p>
+          </div>
+          <ul>
+            <li>Contributed start.gg GraphQL mutations to an open-source tournament tool, automating set calling and set progress tracking for organizers.</li>
+            <li>The tool is used at events with 1,000+ entrants and up to 100,000 concurrent stream viewers.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="community">
+      <h2>Community</h2>
+
+      <article class="role">
+        <div class="when">Mar 2023 – Present</div>
+        <div class="what">
+          <h3>Head Event Organizer <span class="org">New York City Melee</span></h3>
+          <ul>
+            <li>Led weekly NYC Melee tournaments (80–120 players), boosting attendance by ~30% per year.</li>
+            <li>Directed a 1,000-entrant international annual tournament in Toronto, managing cross-border travel, venue negotiations, multi-day scheduling, and a 30-person volunteer team.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap section" id="skills">
+      <h2>Skills</h2>
+
+      <dl class="skills">
+        <div>
+          <dt>Languages</dt>
+          <dd><span>Python</span><span>JavaScript / TypeScript</span><span>Java</span><span>SQL</span><span>C</span><span>C++</span><span>C#</span></dd>
+        </div>
+        <div>
+          <dt>Backend</dt>
+          <dd><span>Django</span><span>GraphQL</span><span>REST</span><span>Node</span><span>Express</span><span>React</span></dd>
+        </div>
+        <div>
+          <dt>Cloud &amp; ops</dt>
+          <dd><span>AWS Lambda</span><span>S3</span><span>DynamoDB</span><span>IoT Core</span><span>IAM</span><span>Kubernetes</span><span>Datadog</span></dd>
+        </div>
+        <div>
+          <dt>AI</dt>
+          <dd><span>GenAI</span><span>Claude</span></dd>
+        </div>
+      </dl>
+
+      <div class="education">
+        <h2>Education</h2>
+        <p><strong>B.S. Software Engineering</strong>, Arizona State University, Mesa, AZ · May 2021</p>
+      </div>
+    </section>
+
+    <section class="wrap section contact" id="contact">
+      <h2>Contact</h2>
+      <p class="contact-line">Looking for a backend engineer? I'd like to hear about it.</p>
+      <a class="email" href="mailto:hannahconnolly949@gmail.com">hannahconnolly949@gmail.com</a>
+      <p class="links">
+        <a href="https://github.com/HannahConnolly" rel="noopener">github.com/HannahConnolly</a>
+        <a href="https://www.linkedin.com/in/hannahconn" rel="noopener">linkedin.com/in/hannahconn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <p>© 2026 Hannah Connolly · New York, NY</p>
+  </footer>
+
+  <script>
+    document.querySelector('.theme-toggle').addEventListener('click', function () {
+      var root = document.documentElement;
+      var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var current = root.dataset.theme || (systemDark ? 'dark' : 'light');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  </script>
+</body>
+</html>
