@@ -1,6 +1,6 @@
-# hannahconnolly.github.io
+# hannahconnolly.dev
 
-Source for my portfolio site, live at **https://hannahconnolly.github.io/**.
+Source for my portfolio site, live at **https://hannahconnolly.dev/**.
 
 It's a single static page with no build step or dependencies:
 
@@ -19,7 +19,7 @@ Then visit http://localhost:8000.
 
 ## Deploying
 
-The site is hosted on GitHub Pages and publishes from the `main` branch. Pushing to `main` updates the live site within about a minute.
+The site is hosted on GitHub Pages and publishes from the `main` branch. The `CNAME` file sets the custom domain; DNS is managed in Cloudflare. Pushing to `main` updates the live site within about a minute.
 
 ## Contact
 
