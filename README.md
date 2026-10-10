@@ -5,7 +5,7 @@ Source for my portfolio site, live at **https://hannahconnolly.github.io/**.
 It's a single static page with no build step or dependencies:
 
 - `index.html` holds all the content and a few lines of inline JavaScript for the light/dark theme toggle
-- `styles.css` holds all the styling, including both colour themes and the mobile layout
+- `styles.css` holds all the styling, including both color themes and the mobile layout
 
 ## Running locally
 

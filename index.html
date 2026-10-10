@@ -134,6 +134,28 @@
             <li>Streamed sensor data to AWS IoT Core over MQTT using X.509 certificate authentication, and routed it through an IoT Rule into DynamoDB, with keys designed for time-range queries.</li>
             <li>Moved Gemini image analysis to an event-driven AWS Lambda triggered by S3 photo uploads. It queries 24 hours of readings from DynamoDB, loads secrets from SSM Parameter Store, and retries when the API is rate-limited.</li>
           </ul>
+          <div class="pipeline">
+            <div class="flow">
+              <span class="flow-label">Hourly</span>
+              <ol>
+                <li><span>DHT11 sensor</span></li>
+                <li><span>Raspberry Pi</span></li>
+                <li><span>IoT Core (MQTT)</span></li>
+                <li><span>IoT Rule</span></li>
+                <li><span>DynamoDB</span></li>
+              </ol>
+            </div>
+            <div class="flow">
+              <span class="flow-label">Daily</span>
+              <ol>
+                <li><span>Webcam photo</span></li>
+                <li><span>S3</span></li>
+                <li><span>Lambda</span></li>
+                <li><span>Gemini analysis</span></li>
+                <li><span>Discord report</span></li>
+              </ol>
+            </div>
+          </div>
         </article>
 
         <article class="card">
@@ -141,6 +163,7 @@
             <p class="card-meta">2026 · Open-source contribution</p>
             <h3><a href="https://github.com/jmlee337/replay-manager-for-slippi" rel="noopener">Replay Manager for Slippi</a></h3>
             <p class="tags"><span>GraphQL</span><span>start.gg API</span><span>Open source</span></p>
+            <p class="card-link"><a href="https://github.com/jmlee337/replay-manager-for-slippi/pull/167" rel="noopener">Merged pull request #167</a></p>
           </div>
           <ul>
             <li>Contributed start.gg GraphQL mutations to an open-source tournament tool, automating set calling and set progress tracking for organizers.</li>
@@ -148,6 +171,41 @@
           </ul>
         </article>
       </div>
+
+      <h3 class="subhead">More on GitHub</h3>
+      <div class="repo-grid">
+        <a class="repo" href="https://github.com/Moburu/nycmelee-homepage" rel="noopener">
+          <span class="repo-name">nycmelee-homepage</span>
+          <span class="repo-desc">Community site for NYC Melee. I contributed 10 merged pull requests, including start.gg event data on the home page, the navbar, and CI formatting checks.</span>
+          <span class="repo-tech">Next.js · TypeScript · Tailwind</span>
+        </a>
+        <a class="repo" href="https://github.com/HannahConnolly/piMTA" rel="noopener">
+          <span class="repo-name">piMTA</span>
+          <span class="repo-desc">Heads-up display of real-time train arrivals at a local station, read from GTFS-RT feeds and shown in a terminal or on a Raspberry Pi e-paper HAT.</span>
+          <span class="repo-tech">Python · Raspberry Pi · GTFS-RT</span>
+        </a>
+        <a class="repo" href="https://github.com/HannahConnolly/TO-bot" rel="noopener">
+          <span class="repo-name">TO-bot</span>
+          <span class="repo-desc">Discord bot that reminds tournament organizers of their weekly tasks, such as posting registration links and sharing schedules.</span>
+          <span class="repo-tech">Python · Discord</span>
+        </a>
+        <a class="repo" href="https://github.com/HannahConnolly/Tournament-Organizer-Rotation" rel="noopener">
+          <span class="repo-name">Tournament-Organizer-Rotation</span>
+          <span class="repo-desc">Command-line tool that generates a two-month rotating weekly schedule for tournament organizers, using only the Python standard library.</span>
+          <span class="repo-tech">Python · CLI</span>
+        </a>
+        <a class="repo" href="https://github.com/HannahConnolly/trackmania-name-gen" rel="noopener">
+          <span class="repo-name">trackmania-name-gen</span>
+          <span class="repo-desc">Web tool for building colored, styled Trackmania usernames, with a real-time preview and one-click copy.</span>
+          <span class="repo-tech">Next.js · TypeScript · Tailwind</span>
+        </a>
+        <a class="repo" href="https://hannahconnolly.github.io/pokemon-birthday/" rel="noopener">
+          <span class="repo-name">pokemon-birthday</span>
+          <span class="repo-desc">Maps a birthday to a Pokémon and shows its details from the public PokéAPI. This one links to the live demo.</span>
+          <span class="repo-tech">React · TypeScript · Vite</span>
+        </a>
+      </div>
+      <p class="all-repos"><a href="https://github.com/HannahConnolly?tab=repositories" rel="noopener">All repositories on GitHub</a></p>
     </section>
 
     <section class="wrap section" id="community">
